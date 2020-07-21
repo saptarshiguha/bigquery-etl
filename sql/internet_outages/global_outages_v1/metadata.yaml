@@ -13,9 +13,9 @@ description: |-
     - `proportion_terminated`: the proportion of users that had their connection terminated internally by the networking code.
     - `proportion_channel_open`: the proportion of users for which the upload request was terminated immediately, by the client, because of a Necko internal error.
     - `avg_dns_success_time`: the average time it takes for a successful DNS resolution, in milliseconds.
-    - `missing_dns_success`: counts how many sessions did not report the `DNS_LOOKUP_TIME` histogram.
+    - `missing_dns_success`: counts how many sessions did not report the `DNS_LOOKUP_TIME` histogram but had positive session length.
     - `avg_dns_failure_time`: the average time it takes for an unsuccessful DNS resolution, in milliseconds.
-    - `missing_dns_failure`: counts how many sessions did not report the `DNS_FAILED_LOOKUP_TIME` histogram.
+    - `missing_dns_failure`: counts how many sessions did not report the `DNS_FAILED_LOOKUP_TIME` histogram but had positive session length.
     - `count_dns_failure`: the average count of unsuccessful DNS resolutions reported.
     - `ssl_error_prop`: the proportion of users that reported an error through the `SSL_CERT_VERIFICATION_ERRORS` histogram.
     - `avg_tls_handshake_time`: the average time after the TCP SYN to ready for HTTP, in milliseconds.
